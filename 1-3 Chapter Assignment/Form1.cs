@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace _1_3_Chapter_Assignment
 {
-    public partial class Form1 : Form
+    public partial class frmChapterAssignment : Form
     {
-        public Form1()
+        
+        public frmChapterAssignment()
         {
+            string name = txtName.Text;
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            lblFinale.Visible = true;
+            lblFinale.Text = "Thank you for your cooperation" + name;
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+    }
+
