@@ -12,23 +12,39 @@ namespace _1_3_Chapter_Assignment
 {
     public partial class frmChapterAssignment : Form
     {
-        
+       
+
         public frmChapterAssignment()
         {
-            string name = txtName.Text;
+
             InitializeComponent();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            lblFinale.Visible = true;
-            lblFinale.Text = "Thank you for your cooperation" + name;
+            lblName2.Visible = true;
+            lblHeight2.Visible = true;
+            lblAge2.Visible = true;
+            
         }
 
-        private void txtName_TextChanged(object sender, EventArgs e)
+        private void txtName1_TextChanged(object sender, EventArgs e)
         {
+            string name = txtName1.Text;
+            lblName2.Text = "Hello " + name;
+        }
 
+        private void txtHeight_TextChanged_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtAge_TextChanged(object sender, EventArgs e)
+        {
+            int Age;
+            Age = Convert.ToInt32(txtAge.Text);
+            int expectency = 82 - Age;
+            lblAge2.Text = "You are " + expectency + " years below  life expentancy";
         }
     }
-    }
-
+}
