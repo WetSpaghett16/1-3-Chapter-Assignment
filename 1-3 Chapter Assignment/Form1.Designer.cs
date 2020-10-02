@@ -141,7 +141,7 @@ namespace _1_3_Chapter_Assignment
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlueViolet;
-            this.ClientSize = new System.Drawing.Size(338, 319);
+            this.ClientSize = new System.Drawing.Size(434, 323);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.lblAge2);
             this.Controls.Add(this.lblHeight2);

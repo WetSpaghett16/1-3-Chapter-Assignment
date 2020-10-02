@@ -37,7 +37,7 @@ namespace _1_3_Chapter_Assignment
         private void txtHeight_TextChanged_1(object sender, EventArgs e)
         {
             double Height;
-            Height = Convert.ToInt32(txtHeight.Text);
+            Height = Convert.ToDouble(txtHeight.Text);
             double average = 2.51 - Height;
             lblHeight2.Text = "You are " + average + "m shorter than the tallest person on earth";
         }
